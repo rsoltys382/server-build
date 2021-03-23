@@ -22,14 +22,12 @@ variable "servers" {
   type        = map(any)
   default = {
     server-iis = {
-      ami                    = "ami-056db1277deef2218"
       instance_type          = "t2.micro",
       environment            = "dev"
       subnet_id              = "subnet-088eec4b0d226c972"
       vpc_security_group_ids = ["sg-055ae0bd4eabf5e0b"]
     },
     server-apache = {
-      ami                    = "ami-056db1277deef2218"
       instance_type          = "t2.nano",
       environment            = "test"
       subnet_id              = "subnet-088eec4b0d226c972" 
